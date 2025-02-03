@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(212, 45%, 89%);
+}
+
+.grid-item-container {
+  display: grid;
+  height: 60vh;
+  width: 20vw;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr 1fr;
+  background-color: white;
+  border-radius: 1.5em;
+  padding: 1em 0.3em;
+}
+
+img {
+  grid-row: 1/2;
+  width: 90%;
+  height: auto;
+  border-radius: 1em;
+  justify-self: center;
+  align-self: center;
+}
+
+h2 {
+  font-family: "Outfit";
+  font-weight: 700;
+  font-size: 21px;
+}
+.span-title {
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+  margin-top: 0.25em;
+}
+
+.span-paragraph {
+  grid-row: 3/4;
+  align-self: self-start;
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  justify-self: center;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: hsl(216, 15%, 48%);
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 700;
+}
+a {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  top: 5em;
+  color: black;
+  font-size: 15px;
+  font-family: "Outfit";
+}
+
+a:hover {
+  color: hsl(216, 15%, 48%);
+  font-size: 16px;
+}
+
+@media (max-width: 856px) {
+  .grid-item-container {
+    display: grid;
+    height: 70vh;
+    width: 85vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 1fr;
+    background-color: white;
+    border-radius: 1.5em;
+    padding: 0.5em 0.3em;
+  }
+}
